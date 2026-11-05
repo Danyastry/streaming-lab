@@ -25,4 +25,8 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "streaming-lab"
 
 include(":app")
+include(":core:server")
+include(":core:streams")
 include(":core:ui")
+
+include(":feature:server")

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="server_intro">Every lab plays the same 20 second test video: four video renditions (216p, 360p, 540p and 720p, from 200 kbit/s to 2 Mbit/s) and one audio track, cut into 2 second CMAF segments. One set of segments is described twice, by an HLS master playlist and by a DASH manifest. A small HTTP server inside the app serves them on the loopback address, and every byte goes through a bandwidth shaper that follows the network trace you pick.</string>
+    <string name="server_address">Server address</string>
+    <string name="server_network">Network</string>
+    <string name="server_streams">Manifests</string>
+    <string name="server_fetch">Fetch</string>
+    <string name="server_error">Request failed: %1$s</string>
+    <string name="server_fetched">HTTP %1$d - %2$s - bytes: %3$d - time: %4$d ms</string>
+    <string name="server_log_title">Requests (newest first, total: %1$d)</string>
+    <string name="server_log_empty">No requests yet. Fetch a manifest, or play a stream in another lab.</string>
+    <string name="server_clear">Clear</string>
+    <string name="server_rate" tools:ignore="PluralsCandidate">%1$d kbit/s</string>
+    <string name="server_rate_unknown">instant</string>
+    <string name="server_log_row">%1$d %2$s - bytes: %3$d - %4$d ms - %5$s</string>
+</resources>
