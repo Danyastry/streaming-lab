@@ -1,0 +1,16 @@
+<resources>
+    <string name="playback_intro">ExoPlayer plays the local test stream with Media3\'s default adaptive track selection. Pick a slower network while it plays and watch the loading rendition change first, then the one on screen once the buffer catches up.</string>
+    <string name="playback_network">Network</string>
+    <string name="playback_restart">Restart</string>
+    <string name="playback_error">Playback failed: %1$s</string>
+    <string name="playback_stat_startup">Startup</string>
+    <string name="playback_stat_stalls">Stalls</string>
+    <string name="playback_stat_stalled">Stalled</string>
+    <string name="playback_stat_segments">Segments</string>
+    <string name="playback_stat_downloaded">Downloaded</string>
+    <string name="playback_stat_dropped">Dropped frames</string>
+    <string name="playback_switches">Rendition switches (newest first, total: %1$d)</string>
+    <string name="playback_switches_empty">No switches yet.</string>
+    <string name="playback_switch_row">played %1$s, segment at %2$s: %3$s -> %4$s (%5$s)</string>
+    <string name="playback_note">Restart resets the network trace so every run sees the same bandwidth timeline. Startup runs from the play call to the first READY state. A stall is any BUFFERING after that which a seek did not cause. The overlay shows the rendition being downloaded and the one being decoded; they differ by the length of the buffer, so a switch is decided seconds of media ahead of what you see. Each run builds a fresh player, so no bandwidth estimate carries over. The HLS playlists declare EXT-X-INDEPENDENT-SEGMENTS: without it Media3 has to re-download the overlapping segment on every switch, and when the buffer is nearly empty it keeps the current rendition instead, so HLS stays stuck high on a slow network while DASH switches down.</string>
+</resources>

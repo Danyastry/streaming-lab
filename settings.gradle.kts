@@ -26,7 +26,9 @@ rootProject.name = "streaming-lab"
 
 include(":app")
 include(":core:server")
+include(":core:player")
 include(":core:streams")
 include(":core:ui")
 
+include(":feature:playback")
 include(":feature:server")
