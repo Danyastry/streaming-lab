@@ -40,4 +40,10 @@ for playlist in "$OUT"/media_*.m3u8; do
   grep -q '^#EXT-X-ENDLIST' "$playlist" || echo '#EXT-X-ENDLIST' >> "$playlist"
 done
 
+for playlist in "$OUT"/master.m3u8 "$OUT"/media_*.m3u8; do
+  sed -i '' -e '/^#EXT-X-VERSION:/a\
+#EXT-X-INDEPENDENT-SEGMENTS
+' "$playlist"
+done
+
 echo "Wrote $(ls "$OUT" | wc -l | tr -d ' ') files, $(du -sh "$OUT" | cut -f1) to $OUT"

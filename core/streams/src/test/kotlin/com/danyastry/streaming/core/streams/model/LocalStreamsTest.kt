@@ -26,4 +26,12 @@ class LocalStreamsTest {
         assertThat(named.size).isAtLeast(5 * 11)
         named.forEach { name -> assertThat(File(vod, name).isFile).isTrue() }
     }
+
+    @Test
+    fun `every HLS playlist declares independent segments so players can switch down on an empty buffer`() {
+        val playlists = File(assets, "vod").listFiles { file -> file.extension == "m3u8" }!!.toList()
+
+        assertThat(playlists).hasSize(6)
+        playlists.forEach { playlist -> assertThat(playlist.readLines()).contains("#EXT-X-INDEPENDENT-SEGMENTS") }
+    }
 }

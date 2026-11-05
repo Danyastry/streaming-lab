@@ -1,0 +1,8 @@
+<resources>
+    <string name="player_overlay_state">state: %1$s, %2$s</string>
+    <string name="player_overlay_playing">on screen: %1$s</string>
+    <string name="player_overlay_loading">loading: %1$s</string>
+    <string name="player_overlay_buffer">buffer: %1$s</string>
+    <string name="player_overlay_estimate">estimate: %1$s</string>
+    <string name="player_overlay_position">position: %1$s</string>
+</resources>

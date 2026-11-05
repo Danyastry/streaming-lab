@@ -27,6 +27,7 @@ android {
 
 dependencies {
     implementation(projects.core.ui)
+    implementation(projects.feature.playback)
     implementation(projects.feature.server)
 
     implementation(libs.androidx.core.ktx)
