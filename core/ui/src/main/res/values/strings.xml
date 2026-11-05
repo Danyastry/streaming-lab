@@ -1,0 +1,17 @@
+<resources>
+    <string name="ui_category_playback">Playback</string>
+    <string name="ui_category_manifests">Manifests</string>
+    <string name="ui_category_adaptive">Adaptive bitrate</string>
+    <string name="ui_category_platform">Android platform</string>
+    <string name="ui_category_offline">Offline, DRM and subtitles</string>
+    <string name="ui_category_playback_description">ExoPlayer on HLS and DASH streams served by a local server inside the app</string>
+    <string name="ui_category_manifests_description">What is inside an m3u8 playlist and a DASH MPD, parsed by hand</string>
+    <string name="ui_category_adaptive_description">BOLA, buffer-based and throughput-based ABR, measured on the same network traces</string>
+    <string name="ui_category_platform_description">Picture-in-picture, background playback and media controls</string>
+    <string name="ui_category_offline_description">Downloads, ClearKey DRM, subtitles and live streams</string>
+    <string name="ui_requirement_android">Android %1$s+</string>
+    <string name="ui_requirement_needs_android">Needs Android %1$s</string>
+    <string name="ui_environment_emulator">Running on an emulator. Video decoding and timing here are only good for comparisons, not as real-device numbers.</string>
+    <string name="ui_environment_device">Running on a real device. Close other apps and keep the phone cool for steady numbers.</string>
+    <string name="ui_environment_debuggable">This is a debug build. Debug builds run slower; measure on a release build.</string>
+</resources>
